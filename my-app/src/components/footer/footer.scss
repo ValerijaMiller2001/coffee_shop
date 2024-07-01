@@ -1,0 +1,20 @@
+.footer {
+    height: 150px;
+    padding: 30px 0;
+    &_nav {
+        ul {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            align-items: center;
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+    }
+    &_divider {
+        display: block;
+        margin: 0 auto;
+        margin-top: 30px;
+    }
+}

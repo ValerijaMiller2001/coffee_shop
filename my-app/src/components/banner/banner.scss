@@ -1,0 +1,13 @@
+.banner {
+    background: url('../../resources/img/our_coffee/our_coffee_bg.jpeg') center center / cover no-repeat;
+    height: 260px;
+    &_title {
+        color: rgb(255, 255, 255);
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 58px;
+        text-align: center;
+        margin-top: 55px;
+
+    }
+}

@@ -1,0 +1,39 @@
+.aboutit {
+    padding: 70px 0 0;
+    &_wrapper {
+        display: grid;
+        grid-template-columns: 395px 560px;
+        justify-content: center;
+        gap: 45px;
+    }
+    &_img {
+        height: 395px;
+        display: block;
+        margin: 0 auto;
+    }
+    &_title {
+        color: rgb(0, 0, 0);
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 35px;
+        text-align: center;
+    }
+    &_divider {
+        display: block;
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+    &_text {
+        color: rgb(0, 0, 0);
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px;
+        margin-top: 20px;
+    }
+    &_price {
+        color: rgb(0, 0, 0);
+        font-size: 24px;
+        font-weight: 400;
+        margin-top: 20px;
+    }
+}

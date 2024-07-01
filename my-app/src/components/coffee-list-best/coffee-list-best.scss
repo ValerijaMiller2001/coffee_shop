@@ -1,0 +1,54 @@
+.listbest {
+    padding: 80px 0 100px 0;
+    background: url('../../resources/img/best/best_bg.jpeg') center center / cover no-repeat;
+    &_white {
+        padding: 60px 0;
+        background-color: rgb(255, 255, 255);
+    }
+    &_title {
+        color: rgb(0, 0, 0);
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 35px;
+        text-align: center;
+    }
+    &_block {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        gap: 70px;
+        margin-top: 30px;
+    }
+    &_item {
+        list-style-type: none;
+        width: 220px;
+        border-radius: 8px;
+        background: rgba(255, 255, 255, 0.65);
+        padding: 25px;
+        box-shadow: 1px 1px 10px rgba($color: #000000, $alpha: 0.5);
+        &_img {
+            width: 155px;
+            height: 120px;
+            display: block;
+            margin: 0 auto;
+            object-fit: cover;
+        }
+        &_title {
+            color: rgb(0, 0, 0);
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 20px;
+            text-align: right;
+            margin-top: 20px;
+        }
+        &_price {
+            color: rgb(0, 0, 0);
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 20px;
+            text-align: right;
+        }
+    }
+}
+

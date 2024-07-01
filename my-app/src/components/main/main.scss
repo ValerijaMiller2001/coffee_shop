@@ -1,0 +1,43 @@
+.main {
+    background: url('../../resources/img/main_bg.jpeg') center center / cover no-repeat;
+    height: 640px;
+    &_title {
+        color: rgb(255, 255, 255);
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 58px;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        padding-top: 100px;
+    }
+    &_divider {
+        display: block;
+        margin: 0 auto;
+    }
+    &_subtitle {
+        color: rgb(255, 255, 255);
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 35px;
+        text-align: center;
+        margin-top: 40px;
+    }
+    &_btn {
+        display: block;
+        margin: 0 auto;
+        width: 120px;
+        height: 30px;
+        border-radius: 3px;
+        border: 1px solid rgb(255, 255, 255);
+        background: none;
+
+        color: rgb(255, 255, 255);
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 20px;
+        text-align: center;
+        padding: 5px;
+        margin-top: 20px;
+    }
+}
