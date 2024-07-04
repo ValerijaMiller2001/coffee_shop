@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/static/css/main.3084f755.css",
+    "main.js": "/static/js/main.02f3d21f.js",
+    "static/media/best_bg.jpeg": "/static/media/best_bg.a744d312b5512babd871.jpeg",
+    "static/media/main_bg.jpeg": "/static/media/main_bg.377d1d99fdcb00235ae6.jpeg",
+    "static/media/our_coffee_bg.jpeg": "/static/media/our_coffee_bg.c071f419acb10bc3a4cd.jpeg",
+    "static/media/about_our_coffee.jpeg": "/static/media/about_our_coffee.5194498785ffecad9e21.jpeg",
+    "static/media/pleasure_about.png": "/static/media/pleasure_about.51016c8932788260558f.png",
+    "static/media/error.gif": "/static/media/error.42292aa12b6bc303ce99.gif",
+    "static/media/beans_logo.svg": "/static/media/beans_logo.f36ac69c451ed21448c9e0c5c040c287.svg",
+    "static/media/beans_logo_black.svg": "/static/media/beans_logo_black.51ed0e67e1b0fff4a460e2558539c02c.svg",
+    "index.html": "/index.html",
+    "main.3084f755.css.map": "/static/css/main.3084f755.css.map",
+    "main.02f3d21f.js.map": "/static/js/main.02f3d21f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3084f755.css",
+    "static/js/main.02f3d21f.js"
+  ]
+}
