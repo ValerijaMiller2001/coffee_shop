@@ -1,38 +1,13 @@
-import {useState, useEffect} from 'react'
+import {useState} from 'react'
 import {Link} from 'react-router-dom'
-import useCoffeeService from '../../services/coffee-service';
 import Spinner from '../spinner/spinner';
 import ErrorMessage from '../error-message/error-message';
 import './coffee-list.scss';
 
 
-const CoffeeList = ({selectedCountry}) => {
-    const [originalCoffeeList, setOriginalCoffeeList] = useState([]);
-    const [filteredCoffeeList, setFilteredCoffeeList] = useState([]);
+const CoffeeList = ({coffeeList, loading, error}) => {
     const [visibleCoffee, setVisibleCoffee] = useState(4);
-    const {getAllCoffee, loading, error} = useCoffeeService();
 
-    useEffect(() => {
-        onRequest();
-    }, [])
-
-    useEffect(() => {
-        if (selectedCountry) {
-            const filteredList = originalCoffeeList.filter(item => item.country === selectedCountry);
-            setFilteredCoffeeList(filteredList);
-        } else {
-            setFilteredCoffeeList(originalCoffeeList)
-        }
-    }, [selectedCountry, originalCoffeeList]);
-
-
-    const onRequest = () => {
-        getAllCoffee()
-            .then((data) => {
-                setOriginalCoffeeList(data);
-                setFilteredCoffeeList(data);
-            })
-    }
 
     const loadMoreItems = () => {
         setVisibleCoffee((items) => items + 4);
@@ -58,11 +33,11 @@ const CoffeeList = ({selectedCountry}) => {
         )
     }
 
-    const items = renderItems(filteredCoffeeList);
+    const items = !error && !loading ? renderItems(coffeeList) : null;
     const errorMessage = error ? <ErrorMessage /> : null;
     const spinner = loading ? <Spinner /> : null;
-    const isLoadMoreActive = filteredCoffeeList.length > visibleCoffee;
-    const showLoadMoreButton = isLoadMoreActive && visibleCoffee < filteredCoffeeList.length;
+    const isLoadMoreActive = coffeeList.length > visibleCoffee;
+    const showLoadMoreButton = isLoadMoreActive && visibleCoffee < coffeeList.length;
     return (
         <div className="list">
             <div className="container">

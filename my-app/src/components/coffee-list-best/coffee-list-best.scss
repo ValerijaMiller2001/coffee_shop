@@ -24,11 +24,10 @@
         list-style-type: none;
         width: 220px;
         border-radius: 8px;
-        background: rgba(255, 255, 255, 0.65);
+        background: rgb(255, 255, 255);
         padding: 25px;
         box-shadow: 1px 1px 10px rgba($color: #000000, $alpha: 0.5);
         &_img {
-            width: 155px;
             height: 120px;
             display: block;
             margin: 0 auto;

@@ -1,6 +1,6 @@
 import './coffee-filter.scss';
 
-const CoffeeFilter = ({handleFilter}) => {
+const CoffeeFilter = ({handleFilter, resetFilters}) => {
     const countries = [
         {index: 0, country: "Швеция"},
         {index: 1, country: "Италия"},
@@ -15,13 +15,11 @@ const CoffeeFilter = ({handleFilter}) => {
             <button className="filter_btn" key={index} onClick={() => handleFilter(country)}>{country}</button>
         )
     })
-    const handleResetFilter = () => {
-        handleFilter(null);
-    };
+
     return (
         <div className="filter">
             {buttons}
-            <button className='filter_btn filter_btn_reset' onClick={handleResetFilter}>Сбросить</button>
+            <button className='filter_btn filter_btn_reset' onClick={resetFilters}>Сбросить</button>
         </div>
     )
 }
